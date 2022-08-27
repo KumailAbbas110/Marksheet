@@ -1,0 +1,50 @@
+print("*****************************************")
+print(" BOARD OF INTERMEDIATE EDUCATION KARACHI  ")
+print(" Marksheet for the session 2022-2023    ")
+print("*****************************************")
+
+maths=int(input("Enter obtained marks in MATHS:-"))
+print("------------------------------------------")
+chem=int(input("Enter obtained marks in CHEM:-"))
+print("------------------------------------------")
+phy=int(input("Enter obtained marks in PHY:-"))
+print("------------------------------------------")
+comp=int(input("Enter obtained marks in COMP:-"))
+print("------------------------------------------")
+eng=int(input("Enter obtained marks in ENG:-"))
+
+marks_obt=maths+chem+phy+comp+eng
+print("*************************")
+print("TOTAL OBTAINED MARKS:")
+print(marks_obt)
+
+
+tot_marks=500
+print("*************************")
+print("TOTAL MARKS:")
+print(tot_marks)
+
+
+per=(marks_obt/tot_marks)*100
+print("*************************")
+print("YOUR CALCULATED PERCENTAGE")
+print(per)
+
+
+if per>=80 and per<=100:
+ print("A1 grade")
+
+elif per>=70 and per<=79:
+    print("A grade")
+
+elif per>=60 and per<=69:
+    print("B grade")
+
+elif per>=50 and per<=59:
+    print("C grade")
+
+elif per>=1 and per<=50:
+    print("You have Failed your examination")
+    print("********************************")
+else:
+    print("Invalid Input")
